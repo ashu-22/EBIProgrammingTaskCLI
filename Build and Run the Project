@@ -1,0 +1,22 @@
+How to build and run the project
+
+This application was created and tested successfully using Java 8, Maven and NetBeans 8.2 IDE on MacOS.
+
+Netbeans can be used to compile / build / run the tests, directly from the IDE tools, however these tasks can also be accomplished from the CLI following the steps below:
+
+To compile/build the application using Maven and the command line or terminal:
+
+From the command line, change directory to the cloned folder (/EBIProgrammingTaskCLI), then type:
+
+ mvn package
+Maven will generate the .jar file in the target folder:
+
+ EBIProgrammingTaskCLI/target/EBIProgrammingTaskCLI-0.1.jar
+To run the program from the /target folder, using the sample file as input and writing the result to a file, type:
+
+ java -jar EBIProgrammingTaskCLI-0.1.jar < ../src/main/resources/inputSample.txt > output.txt
+To run the test file:
+
+From the command line, change directory to the cloned folder (/EBIProgrammingTaskCLI), and type:
+
+ mvn test
